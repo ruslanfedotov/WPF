@@ -7,6 +7,24 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="2" Grid.RowSpan="2" Grid.ColumnSpan="3" HorizontalAlignment="Center" Orientation="Horizontal">
+            <Button x:Name="btnProducts" Margin="50" Width="100" Click="btnProducts_Click">Товары</Button>
+            <Button x:Name="btnCart" Margin="50" Width="100" Click="btnCart_Click">Корзина</Button>
+            <Button x:Name="btnOrders" Margin="50" Width="100" Click="btnOrders_Click">Заказы</Button>
+        </StackPanel>
+
+        <Frame x:Name="MainFrame" Grid.Row="0" Grid.RowSpan="2" Grid.ColumnSpan="3" NavigationUIVisibility="Hidden"></Frame>
     </Grid>
 </Window>
