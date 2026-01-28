@@ -18,9 +18,9 @@ namespace WPF.Pages
     /// <summary>
     /// Логика взаимодействия для Cartpage.xaml
     /// </summary>
-    public partial class Cartpage : Page
+    public partial class CartPage : Page
     {
-        public Cartpage()
+        public CartPage()
         {
             InitializeComponent();
         }

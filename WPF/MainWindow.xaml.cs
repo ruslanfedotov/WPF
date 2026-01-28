@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WPF.Pages;
 
 namespace WPF
 {
@@ -23,6 +24,22 @@ namespace WPF
         public MainWindow()
         {
             InitializeComponent();
+            MainFrame.Navigate(new Pages.ProductsPage());
+        }
+
+        private void btnProducts_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new Pages.ProductsPage());
+        }
+
+        private void btnCart_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new Pages.CartPage());
+        }
+
+        private void btnOrders_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new Pages.OrderPage());
         }
     }
 }

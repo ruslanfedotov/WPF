@@ -20,11 +20,11 @@
         </Grid.RowDefinitions>
 
         <StackPanel Grid.Row="2" Grid.RowSpan="2" Grid.ColumnSpan="3" HorizontalAlignment="Center" Orientation="Horizontal">
-            <Button x:Name="btnProducts" Margin="50" Width="100">Товары</Button>
-            <Button x:Name="btnBasket" Margin="50" Width="100">Корзина</Button>
-            <Button x:Name="btnCart" Margin="50" Width="100">Заказы</Button>
+            <Button x:Name="btnProducts" Margin="50" Width="100" Click="btnProducts_Click">Товары</Button>
+            <Button x:Name="btnCart" Margin="50" Width="100" Click="btnCart_Click">Корзина</Button>
+            <Button x:Name="btnOrders" Margin="50" Width="100" Click="btnOrders_Click">Заказы</Button>
         </StackPanel>
 
-        <Frame x:Name="MainFrame" Grid.Row="0" Grid.RowSpan="2" Grid.ColumnSpan="3"></Frame>
+        <Frame x:Name="MainFrame" Grid.Row="0" Grid.RowSpan="2" Grid.ColumnSpan="3" NavigationUIVisibility="Hidden"></Frame>
     </Grid>
 </Window>
